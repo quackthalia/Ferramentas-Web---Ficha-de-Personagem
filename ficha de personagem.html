@@ -3,34 +3,89 @@
   <head>
     <style>
       body {
-      background-image: url('https://bg3.wiki/w/images/3/3d/Avernus_View.webp');
-      background-size: cover;
-      text-align: center;
+        background-image: url('https://bg3.wiki/w/images/3/3d/Avernus_View.webp');
+        background-size: cover;
+        text-align: center;
       }
 
-.titulo-bg3 {
-    font-family: 'Cinzel', 'Georgia', serif;
-    font-size: 48px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #ffffff;
-    letter-spacing: 4px;
+      .titulo-bg3 {
+        font-family: 'Cinzel', 'Georgia', serif;
+        font-size: 48px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #ffffff;
+        letter-spacing: 4px;
+        background-color: rgba(72, 30, 6, 0.497);
+        border: 3px solid #d4af37;
+        padding: 15px 30px;
+        display: block;  
+        width: fit-content;
+        margin: 20px auto;
+        border-radius: 15px;
+      }
 
-    background-color: rgba(72, 30, 6, 0.497);
-    border: 3px solid #d4af37;
-    padding: 15px 30px;
-    
-    display: block;  
-    width: fit-content;
-    margin: 20px auto;
-    border-radius: 15px;
-}
+      .conteudo-central {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        margin: 20px auto;
+      }
+
+      .status-block {
+        background-color: rgba(72, 30, 6, 0.497);
+        border: 3px solid #d4af37;
+        border-radius: 15px;
+        padding: 40px;
+        color: #f1d3a2;
+        font-family: 'Georgia', serif;
+        text-align: left;
+        
+        /* MEDIDAS EXATAS */
+        width: 672px;
+        height: 936px;
+        box-sizing: border-box; /* Garante que o padding não aumente o tamanho final */
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+
+      .status-item {
+        display: flex;
+        align-items: center;
+        font-size: 24px; /* Aumentado para preencher melhor o espaço maior */
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+
+      .status-item span {
+        margin-left: auto;
+        color: #fff;
+      }
+
+      .icone-placeholder {
+        width: 50px;
+        height: 50px;
+        background: rgba(255,255,255,0.1);
+        margin-right: 25px;
+        border: 1px solid #d4af37;
+      }
 
       .imagemkarlach {
-          border-radius: 5%;
-          outline: 3px solid #d4af37;
+        border-radius: 15px;
+        outline: 3px solid #d4af37;
+        
+        /* MEDIDAS EXATAS */
+        width: 672px;
+        height: 936px;
+        object-fit: cover; /* Corta as bordas da imagem original para encaixar no novo tamanho */
       }
 
+      .descricao, .habilidades, .caracteristicas {
+        color: white;
+      }
+      h2 { color: #d4af37; }
 
     </style>
   </head>
@@ -38,8 +93,22 @@
   <section class="card">
     
     <h1 class="titulo-bg3">Karlach, Fúria de Avernus</h1>
-    <img src="https://bg3.wiki/w/images/thumb/a/a6/SL_Karlach-fury-of-avernus.jpg/645px-SL_Karlach-fury-of-avernus.jpg.webp?20250115224605" alt="Imagem do personagem", class="imagemkarlach">
+    
+    <div class="conteudo-central">
+      <div class="status-block">
+        <div class="status-item"><div class="icone-placeholder"></div> Strength <span>17</span></div>
+        <div class="status-item"><div class="icone-placeholder"></div> Dexterity <span>13</span></div>
+        <div class="status-item"><div class="icone-placeholder"></div> Constitution <span>15</span></div>
+        <div class="status-item"><div class="icone-placeholder"></div> Intelligence <span>8</span></div>
+        <div class="status-item"><div class="icone-placeholder"></div> Wisdom <span>12</span></div>
+        <div class="status-item"><div class="icone-placeholder"></div> Charisma <span>10</span></div>
+      </div>
+
+      <img src="https://bg3.wiki/w/images/thumb/a/a6/SL_Karlach-fury-of-avernus.jpg/645px-SL_Karlach-fury-of-avernus.jpg.webp?20250115224605" alt="Imagem do personagem" class="imagemkarlach">
+    </div>
+
     <p class="descricao">Um guerreiro lendário das montanhas do norte, conhecido por sua força e honra.</p>
+    
     <div class="habilidades">
       <h2>Habilidades</h2>
       <ul>
@@ -48,6 +117,7 @@
         <li>Espada lendária</li>
       </ul>
     </div>
+    
     <div class="caracteristicas">
       <h2>Características</h2>
       <p><strong>Classe:</strong> Guerreiro</p>
