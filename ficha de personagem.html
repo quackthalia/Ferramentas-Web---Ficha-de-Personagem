@@ -41,10 +41,10 @@
         font-family: 'Georgia', serif;
         text-align: left;
         
-        /* MEDIDAS EXATAS */
+        
         width: 672px;
         height: 936px;
-        box-sizing: border-box; /* Garante que o padding não aumente o tamanho final */
+        box-sizing: border-box;
         
         display: flex;
         flex-direction: column;
@@ -54,7 +54,7 @@
       .status-item {
         display: flex;
         align-items: center;
-        font-size: 24px; /* Aumentado para preencher melhor o espaço maior */
+        font-size: 24px;
         text-transform: uppercase;
         font-weight: bold;
       }
@@ -64,7 +64,7 @@
         color: #fff;
       }
 
-      .icone-placeholder {
+      .icone1 {
         width: 50px;
         height: 50px;
         background: rgba(255,255,255,0.1);
@@ -72,14 +72,16 @@
         border: 1px solid #d4af37;
       }
 
+    
+
       .imagemkarlach {
         border-radius: 15px;
         outline: 3px solid #d4af37;
         
-        /* MEDIDAS EXATAS */
+        
         width: 672px;
         height: 936px;
-        object-fit: cover; /* Corta as bordas da imagem original para encaixar no novo tamanho */
+        object-fit: cover; 
       }
 
       .descricao, .habilidades, .caracteristicas {
@@ -96,12 +98,12 @@
     
     <div class="conteudo-central">
       <div class="status-block">
-        <div class="status-item"><div class="icone-placeholder"></div> Strength <span>17</span></div>
-        <div class="status-item"><div class="icone-placeholder"></div> Dexterity <span>13</span></div>
-        <div class="status-item"><div class="icone-placeholder"></div> Constitution <span>15</span></div>
-        <div class="status-item"><div class="icone-placeholder"></div> Intelligence <span>8</span></div>
-        <div class="status-item"><div class="icone-placeholder"></div> Wisdom <span>12</span></div>
-        <div class="status-item"><div class="icone-placeholder"></div> Charisma <span>10</span></div>
+        <div class="status-item"><div class="icone-placeholder"> <img src="https://bg3.wiki/w/images/2/2c/Strength_Score_Icon.png" alt="strentgh", width="90", height="90"></div> Strength <span>17</span></div>
+        <div class="status-item"><div class="icone-placeholder"><img src="https://bg3.wiki/w/images/2/27/Dexterity_Score_Icon.png" alt="strentgh", width="90", height="90"></div> Dexterity <span>13</span></div>
+        <div class="status-item"><div class="icone-placeholder"><img src="https://bg3.wiki/w/images/a/a0/Constitution_Score_Icon.png" alt="strentgh", width="90", height="90"></div> Constitution <span>15</span></div>
+        <div class="status-item"><div class="icone-placeholder"><img src="https://bg3.wiki/w/images/c/c7/Intelligence_Score_Icon.png" alt="strentgh", width="90", height="90"></div> Intelligence <span>8</span></div>
+        <div class="status-item"><div class="icone-placeholder"><img src="https://bg3.wiki/w/images/8/88/Wisdom_Score_Icon.png" alt="strentgh", width="90", height="90"></div> Wisdom <span>12</span></div>
+        <div class="status-item"><div class="icone-placeholder"><img src="https://bg3.wiki/w/images/b/bc/Charisma_Score_Icon.png" alt="strentgh", width="90", height="90"></div> Charisma <span>10</span></div>
       </div>
 
       <img src="https://bg3.wiki/w/images/thumb/a/a6/SL_Karlach-fury-of-avernus.jpg/645px-SL_Karlach-fury-of-avernus.jpg.webp?20250115224605" alt="Imagem do personagem" class="imagemkarlach">
