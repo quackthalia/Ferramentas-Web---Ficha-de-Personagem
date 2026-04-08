@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
     <style>
       body {
         background-image: url('https://bg3.wiki/w/images/3/3d/Avernus_View.webp');
@@ -9,7 +10,7 @@
       }
 
       .titulo-bg3 {
-        font-family: 'Cinzel', 'Georgia', serif;
+        font-family: 'Cinzel', serif;
         font-size: 48px;
         font-weight: bold;
         text-transform: uppercase;
@@ -24,17 +25,16 @@
         border-radius: 15px;
       }
 
-       .titulogeral {
-        font-family: 'Cinzel', 'Georgia', serif;
+      .titulogeral {
+        font-family: 'Cinzel', serif;
         font-size: 48px;
         font-weight: bold;
         text-transform: uppercase;
         color: #ffffff;
         letter-spacing: 4px;
         text-align: center;
-
-       }
-  
+        margin-bottom: 20px;
+      }
 
       .conteudo-central {
         display: flex;
@@ -52,16 +52,29 @@
         color: #f1d3a2;
         font-family: 'Georgia', serif;
         text-align: left;
-        
-        
         width: 672px;
         height: 936px;
         box-sizing: border-box;
-        
         display: flex;
         flex-direction: column;
         justify-content: space-around;
       }
+
+      .habilities-block {
+        background-color: rgba(72, 30, 6, 0.497);
+        border: 3px solid #d4af37;
+        border-radius: 15px;
+        padding: 40px;
+        color: #f1d3a2;
+        width: 672px;
+        height: 936px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Espalha os itens verticalmente */
+        align-items: center; /* Centraliza tudo horizontalmente no quadrado */
+        padding-bottom: 60px;
+      }      
 
       .status-item {
         display: flex;
@@ -69,81 +82,106 @@
         font-size: 24px;
         text-transform: uppercase;
         font-weight: bold;
+        width: 100%;
+        gap: 15px;
       }
 
-      .status-item span {
-        margin-left: auto;
+      .habilidade-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza o nome e a descrição */
+        gap: 10px;
+        width: 100%;
+      }
+
+      .nome-habilidade {
+        font-family: 'Cinzel', serif; 
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-size: 36px; /* Aumentado consideravelmente */
+        color: #d4af37;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+
+      .habilities-block span {
+        font-family: 'Cinzel', serif; /* Mesma fonte pedida */
         color: #fff;
+        text-transform: none;
+        font-weight: normal;
+        font-size: 26px; /* Aumentado consideravelmente */
+        text-align: center;
+        max-width: 90%;
       }
-
-      .icone1 {
-        width: 50px;
-        height: 50px;
-        background: rgba(255,255,255,0.1);
-        margin-right: 25px;
-        border: 1px solid #d4af37;
-      }
-
-    
 
       .imagemkarlach {
         border-radius: 15px;
         outline: 3px solid #d4af37;
-        
-        
         width: 672px;
         height: 936px;
         object-fit: cover; 
       }
 
-      .descricao, .habilidades, .caracteristicas {
+      .descricao {
         color: white;
+        font-family: 'Georgia', serif;
+        font-size: 20px;
       }
-      h2 { color: #d4af37; }
 
       .textostatus {
-
         font-size: 28px;
+        color: #fff;
       }
-
     </style>
   </head>
-<main class="container">
-  <section class="card">
-    
-    <h1 class="titulo-bg3">Karlach, Fúria de Avernus</h1>
-    
-    <div class="conteudo-central">
-      <div class="status-block">
-        <h1 class="titulogeral">Status</h1>
-        <div class="status-item"><div class="icone-placeholder"> <img src="https://bg3.wiki/w/images/2/2c/Strength_Score_Icon.png" alt="strentgh", width="90", height="90"></div> Strength <span class="textostatus">17</span></div>
-        <div class="status-item"><div class="icone-placeholder"><img src="https://bg3.wiki/w/images/2/27/Dexterity_Score_Icon.png" alt="strentgh", width="90", height="90"></div> Dexterity <span class="textostatus">13</span></div>
-        <div class="status-item"><div class="icone-placeholder"><img src="https://bg3.wiki/w/images/a/a0/Constitution_Score_Icon.png" alt="strentgh", width="90", height="90"></div> Constitution <span class="textostatus">15</span></div>
-        <div class="status-item"><div class="icone-placeholder"><img src="https://bg3.wiki/w/images/c/c7/Intelligence_Score_Icon.png" alt="strentgh", width="90", height="90"></div> Intelligence <span class="textostatus">8</span></div>
-        <div class="status-item"><div class="icone-placeholder"><img src="https://bg3.wiki/w/images/8/88/Wisdom_Score_Icon.png" alt="strentgh", width="90", height="90"></div> Wisdom <span class="textostatus">12</span></div>
-        <div class="status-item"><div class="icone-placeholder"><img src="https://bg3.wiki/w/images/b/bc/Charisma_Score_Icon.png" alt="strentgh", width="90", height="90"></div> Charisma <span class="textostatus">10</span></div>
+  <main class="container">
+    <section class="card">
+      <h1 class="titulo-bg3">Karlach, Fúria de Avernus</h1>
+      
+      <div class="conteudo-central">
+        <div class="status-block">
+          <h1 class="titulogeral">Status</h1>
+          <div class="status-item"><img src="https://bg3.wiki/w/images/2/2c/Strength_Score_Icon.png" width="90" height="90"> Força <span class="textostatus">17</span></div>
+          <div class="status-item"><img src="https://bg3.wiki/w/images/2/27/Dexterity_Score_Icon.png" width="90" height="90"> Destreza <span class="textostatus">13</span></div>
+          <div class="status-item"><img src="https://bg3.wiki/w/images/a/a0/Constitution_Score_Icon.png" width="90" height="90"> Constituição <span class="textostatus">15</span></div>
+          <div class="status-item"><img src="https://bg3.wiki/w/images/c/c7/Intelligence_Score_Icon.png" width="90" height="90"> Inteligência <span class="textostatus">8</span></div>
+          <div class="status-item"><img src="https://bg3.wiki/w/images/8/88/Wisdom_Score_Icon.png" width="90" height="90"> Sabedoria <span class="textostatus">12</span></div>
+          <div class="status-item"><img src="https://bg3.wiki/w/images/b/bc/Charisma_Score_Icon.png" width="90" height="90"> Carisma <span class="textostatus">10</span></div>
+        </div>
+
+        <img src="https://bg3.wiki/w/images/thumb/a/a6/SL_Karlach-fury-of-avernus.jpg/645px-SL_Karlach-fury-of-avernus.jpg.webp?20250115224605" alt="Karlach" class="imagemkarlach">
+
+        <div class="habilities-block">
+          <h1 class="titulogeral">Habilidades</h1>
+          
+          <div class="habilidade-item">
+            <div class="nome-habilidade">
+              <img src="https://bg3.wiki/w/images/7/70/Darkvision.webp" width="90" height="90">
+              Darkvision
+            </div> 
+            <span>Consegue ver no escuro até certa distância.</span>
+          </div> 
+
+          <div class="habilidade-item">
+            <div class="nome-habilidade">
+              <img src="https://bg3.wiki/w/images/b/bd/Hellish_Resistance.webp" width="90" height="90">
+              Hellish Resistance
+            </div> 
+            <span>Resistente a todo dano de Fogo.</span>
+          </div> 
+
+          <div class="habilidade-item">
+            <div class="nome-habilidade">
+              <img src="https://bg3.wiki/w/images/5/5b/Opportunity_Attack.webp" width="90" height="90">
+              Opportunity Attack
+            </div> 
+            <span>Ataca um inimigo que saia do alcance.</span>
+          </div> 
+        </div>
       </div>
 
-      <img src="https://bg3.wiki/w/images/thumb/a/a6/SL_Karlach-fury-of-avernus.jpg/645px-SL_Karlach-fury-of-avernus.jpg.webp?20250115224605" alt="Imagem do personagem" class="imagemkarlach">
-    </div>
-
-    <p class="descricao">Um guerreiro lendário das montanhas do norte, conhecido por sua força e honra.</p>
-    
-    <div class="habilidades">
-      <h2>Habilidades</h2>
-      <ul>
-        <li>Força extrema</li>
-        <li>Resistência</li>
-        <li>Espada lendária</li>
-      </ul>
-    </div>
-    
-    <div class="caracteristicas">
-      <h2>Características</h2>
-      <p><strong>Classe:</strong> Guerreiro</p>
-      <p><strong>Nível:</strong> 45</p>
-      <p><strong>Elemento:</strong> Terra</p>
-    </div>
-  </section>
-</main>
+      <p class="descricao">Um guerreiro lendário das montanhas do norte, conhecido por sua força e honra.</p>
+    </section>
+  </main>
 </html>
