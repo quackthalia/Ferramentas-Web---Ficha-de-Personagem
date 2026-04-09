@@ -71,8 +71,8 @@
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
-        justify-content: space-between; /* Espalha os itens verticalmente */
-        align-items: center; /* Centraliza tudo horizontalmente no quadrado */
+        justify-content: space-between;
+        align-items: center;
         padding-bottom: 60px;
       }      
 
@@ -89,7 +89,7 @@
       .habilidade-item {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Centraliza o nome e a descrição */
+        align-items: center;
         gap: 10px;
         width: 100%;
       }
@@ -99,18 +99,18 @@
         display: flex;
         align-items: center;
         gap: 20px;
-        font-size: 36px; /* Aumentado consideravelmente */
+        font-size: 36px;
         color: #d4af37;
         text-transform: uppercase;
         font-weight: bold;
       }
 
       .habilities-block span {
-        font-family: 'Cinzel', serif; /* Mesma fonte pedida */
+        font-family: 'Cinzel', serif;
         color: #fff;
         text-transform: none;
         font-weight: normal;
-        font-size: 26px; /* Aumentado consideravelmente */
+        font-size: 26px;
         text-align: center;
         max-width: 90%;
       }
@@ -123,15 +123,29 @@
         object-fit: cover; 
       }
 
-      .descricao {
-        color: white;
-        font-family: 'Georgia', serif;
-        font-size: 20px;
-      }
-
       .textostatus {
         font-size: 28px;
         color: #fff;
+      }
+
+      .box-descricao {
+        background-color: rgba(72, 30, 6, 0.6);
+        border: 3px solid #d4af37;
+        border-radius: 15px;
+        padding: 30px;
+        color: #ffffff;
+        font-family: 'Georgia', serif;
+        font-size: 22px;
+        line-height: 1.6;
+        width: 80%;
+        margin: 40px auto;
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      }
+
+      .box-descricao strong {
+        color: #d4af37;
+        font-family: 'Cinzel', serif;
+        font-size: 26px;
       }
     </style>
   </head>
@@ -181,7 +195,10 @@
         </div>
       </div>
 
-      <p class="descricao">Um guerreiro lendário das montanhas do norte, conhecido por sua força e honra.</p>
+      <div class="box-descricao">
+        <strong>A Campeã de Zariel</strong><br>
+        Uma bárbara Tiefling de coração indomável e espírito vibrante, Karlach escapou de uma década de servidão forçada nas Guerras de Sangue em Avernus. Marcada por um motor infernal em chamas no lugar de seu coração, ela busca vingança contra aqueles que a venderam e luta para aproveitar cada segundo de sua liberdade reconquistada. Sob sua aparência imponente e pele abrasadora, bate o coração de uma guerreira leal, pronta para incinerar qualquer um que ameace seus novos aliados.
+      </div>
     </section>
   </main>
 </html>
